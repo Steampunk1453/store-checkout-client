@@ -28,3 +28,5 @@ target/test-classes/com/store/checkout/client/StoreCheckoutClientApplicationTest
 target/test-classes/META-INF/store-checkout-client\.kotlin_module
 
 HELP\.md
+
+target/test-classes/com/store/checkout/client/services/BasketServiceTest\.class
