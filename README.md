@@ -33,6 +33,8 @@ Back-End client checkout store with Java, Spring Boot, Spring Security, JWT and 
     The logic of the app is in the service project
     
     Client calls to service with RestTemplate
+    
+    Client and service uses one application.properties for simplicity but it is possible use one for each environment (application-local.properties, application-test.properties, application-production.properties)
      
      
 
