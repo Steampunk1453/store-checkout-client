@@ -31,7 +31,7 @@ public class BasketServiceTest {
     private ApiBasketRepository apiBasketRepository;
 
     @Test
-    public void saveBasket() {
+    public void whenSaveBasketReturnsBasketResponse() {
         BasketResponse basketResponse = buildBasketResponse();
 
         when(apiBasketRepository.addBasket(any(OrderRequest.class))).thenReturn(basketResponse);
@@ -46,7 +46,7 @@ public class BasketServiceTest {
     }
 
     @Test
-    public void getTotalAmount() {
+    public void whenGetTotalAmountReturnsDouble() {
         when(apiBasketRepository.getTotalAmount(anyString())).thenReturn("10.5");
 
         double result = basketService.getTotalAmount("");
@@ -55,14 +55,14 @@ public class BasketServiceTest {
     }
 
     @Test
-    public void delete() {
+    public void whenDeleteCallRepository() {
         basketService.delete("1L");
 
         verify(apiBasketRepository, times(1)).deleteBasket(anyString());
     }
 
     @Test
-    public void saveProduct() {
+    public void whenSaveProductReturnsBasketResponse() {
         BasketResponse basketResponse = buildBasketResponse();
 
         when(apiBasketRepository.addProduct(any(BasketRequest.class))).thenReturn(basketResponse);
@@ -84,7 +84,7 @@ public class BasketServiceTest {
 
         return BasketResponse.builder()
                 .id(1L)
-                .dateCreated(LocalDate.now())
+                .dateCreated("30/06/2019")
                 .status("PAID")
                 .totalAmount(15.5)
                 .basketProducts(basketProducts)
