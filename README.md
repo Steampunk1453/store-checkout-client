@@ -2,6 +2,11 @@
 
 Back-End client checkout store with Java, Spring Boot, Spring Security, JWT and Swagger 
 
+* For testing and view the code in the project I recommend using the IntelliJ IDE (free Community or Ultimate edition)
+     
+     https://www.jetbrains.com/idea/
+     
+
 * For testing navigate to:
 
      http://localhost:8081/swagger-ui.html
