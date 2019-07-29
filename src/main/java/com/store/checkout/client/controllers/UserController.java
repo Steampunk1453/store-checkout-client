@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 public class UserController {
 
     @PostMapping
-    public User login(@RequestParam("username") String username, @RequestParam("password") String password) {
+    public User login(@RequestParam("username") String username) {
             String token = getJWTToken(username);
             User user = new User();
             user.setUser(username);
