@@ -10,7 +10,7 @@ Back-End client checkout store with Java, Spring Boot, Spring Security, JWT and 
       
       Install maven
       
-      In terminal execute: mvn spring-boot:run`      
+      In terminal execute: `mvn spring-boot:run`      
 
 * For testing navigate to:
 
