@@ -8,6 +8,5 @@ public class Product {
     private long id;
     private String code;
     private String name;
-    private double price;
 
 }
