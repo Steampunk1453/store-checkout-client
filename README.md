@@ -6,6 +6,11 @@ Back-End client checkout store with Java, Spring Boot, Spring Security, JWT and 
      
      https://www.jetbrains.com/idea/
      
+ * How to run : 
+      
+      Install maven
+      
+      In terminal execute: mvn spring-boot:run`      
 
 * For testing navigate to:
 
