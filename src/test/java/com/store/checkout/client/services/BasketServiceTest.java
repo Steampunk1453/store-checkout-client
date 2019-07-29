@@ -11,7 +11,6 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -55,7 +54,7 @@ public class BasketServiceTest {
     }
 
     @Test
-    public void whenDeleteCallRepository() {
+    public void whenDeleteCallsRepository() {
         basketService.delete("1L");
 
         verify(apiBasketRepository, times(1)).deleteBasket(anyString());
